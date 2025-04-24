@@ -2,26 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rodrigo Casio Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Casio | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
-        h1 { color: #333; }
-        .project { margin: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
-        a { color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
     </style>
 </head>
-<body>
-    <h1>Welcome to My Portfolio</h1>
-    <h2>About Me</h2>
-    <p>Hi, I'm Rodrigo Casio, a University student passionate about C++ and building cool projects. I love solving problems, listening to Coldplay, and exploring physics. My goal is to become a software developer.</p>
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Bank System</h3>
-        <p>A C++ program for managing bank accounts with deposits, withdrawals, transfers, and interest calculations.</p>
-        <p><a href="https://github.com/rodrigcasio/BankSystem">View on GitHub</a> | <a href="https://github.com/rodrigcasio/BankSystem#readme">See Details</a></p>
-    </div>
-    <h2>Contact</h2>
-    <p>Email: rod.casio@outlook.com | <a href="https://github.com/rodrigcasio">GitHub</a> | <a href="https://linkedin.com/in/RodrigoCasio">LinkedIn</a></p>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white p-4 sticky top-0 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Rodrigo Casio</a>
+            <div class="space-x-6">
+                <a href="#about" class="hover:text-gray-200">About</a>
+                <a href="#projects" class="hover:text-gray-200">Projects</a>
+                <a href="#contact" class="hover:text-gray-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-xl max-w-2xl mx-auto">Hi, I'm Rodrigo Casio, a passionate C++ developer crafting real-world solutions. Explore my projects and let's connect!</p>
+            <a href="#projects" class="mt-6 inline-block bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-200 transition">View Projects</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8">About Me</h2>
+            <p class="text-lg max-w-3xl mx-auto text-center">I'm Rodrigo Casio, a University student diving deep into C++ and software development. I love solving complex problems, listening to Coldplay, and exploring physics. My goal is to build impactful software as a professional developer.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Bank System</h3>
+                    <p class="text-gray-600 mb-4">A C++ program for managing bank accounts with deposits, withdrawals, transfers, and interest calculations.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/rodrigcasio/BankSystem" class="text-blue-600 hover:underline">View on GitHub</a>
+                        <a href="https://github.com/rodrigcasio/BankSystem#readme" class="text-blue-600 hover:underline">See Details</a>
+                    </div>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-8">Get in Touch</h2>
+            <p class="text-lg mb-6">Interested in collaborating or learning more? Reach out!</p>
+            <p class="text-lg">Email: <a href="mailto:rod.casio@outlook.com" class="text-blue-600 hover:underline">rod.casio@outlook.com</a></p>
+            <p class="text-lg">GitHub: <a href="https://github.com/rodrigcasio" class="text-blue-600 hover:underline">rodrigcasio</a></p>
+            <p class="text-lg">LinkedIn: <a href="https://linkedin.com/in/RodrigoCasio" class="text-blue-600 hover:underline">RodrigoCasio</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Rodrigo Casio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
